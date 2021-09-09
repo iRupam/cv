@@ -1,0 +1,88 @@
+<!--BUTTON
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background: #333;
+    }
+
+    button {
+      height: 4rem;
+      width: 18rem;
+      background: #ff3300;
+      border: none;
+      outline: none;
+      border-radius: 5rem;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 5px 5px #000;
+      position: relative;
+      overflow: hidden;
+      transition: .1s;
+    }
+
+    button:active {
+      box-shadow: 0 2px 5px #000;
+    }
+    button span{
+      height:1px; width: 1px;
+      display: block;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      animation: ripple .3s;
+    }
+    @@keyframes ripple {
+      to{
+        opacity:0;
+        transform: scale(200);
+      }
+    }
+  </style>
+  <script src="jquery.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <button type="button" name="button">BUTTON</button>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('button').click(function(e){
+        $(this).append('<span></span>');
+        var top = e.pageY;
+        var left = e.pagex;
+        $(this).children().offset({top:top, left:left}).fadeout(500);
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>-->
+
+
+<!--                   PRACTICE                      -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p style="color:red">sonu pandey </p>
+
+  </body>
+</html>
